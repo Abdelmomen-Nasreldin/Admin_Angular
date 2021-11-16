@@ -12,6 +12,17 @@
             <div class="position-sticky pt-3 asideDiv">
               <ul class="nav flex-column">
                 <li class="nav-item">
+                  <a class="nav-link" [routerLink]="['/User/Account/Dashboard']" routerLinkActive="router-link-active" >
+                    <span data-feather="file">
+                      <img
+                        src="../../../../../assets/aside/addresses_menu_icon_v3.svg"
+                        alt=""
+                      />
+                    </span>
+                    Dashboard
+                  </a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link active" aria-current="page" [routerLink]="['/User/Account/Orders']" routerLinkActive="router-link-active" >
                     <span data-feather="home">
                       <img
@@ -22,17 +33,7 @@
                     Orders
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" [routerLink]="['/User/Account/Addresses']" routerLinkActive="router-link-active" >
-                    <span data-feather="file">
-                      <img
-                        src="../../../../../assets/aside/addresses_menu_icon_v3.svg"
-                        alt=""
-                      />
-                    </span>
-                    Addresses
-                  </a>
-                </li>
+
                 <li class="nav-item">
                   <a class="nav-link" [routerLink]="['/User/Account/Payments']" routerLinkActive="router-link-active" >
                     <span data-feather="shopping-cart">
@@ -45,25 +46,25 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" [routerLink]="['/User/Account/noonCredits']" routerLinkActive="router-link-active" >
+                  <a class="nav-link" [routerLink]="['/User/Account/Products']" routerLinkActive="router-link-active" >
                     <span data-feather="users">
                       <img
                         src="../../../../../assets/aside/noon_credits_menu_icon_v3.svg"
                         alt=""
                       />
                     </span>
-                    noon credits
+                    Products
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" [routerLink]="['/User/Account/Returns']" routerLinkActive="router-link-active" >
+                  <a class="nav-link" [routerLink]="['/User/Account/Customers']" routerLinkActive="router-link-active" >
                     <span data-feather="bar-chart-2">
                       <img
                         src="../../../../../assets/aside/returns_menu_icon_v3.svg"
                         alt=""
                       />
                     </span>
-                    Returns
+                    Customers
                   </a>
                 </li>
                 <li class="nav-item">

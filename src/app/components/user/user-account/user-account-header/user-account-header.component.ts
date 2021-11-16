@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-user-account-header',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-account-header.component.scss']
 })
 export class UserAccountHeaderComponent implements OnInit {
-
+  @Output() toogleSideBarEvent : EventEmitter<any> = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  toogleSideBar(){
+    this.toogleSideBarEvent.emit();
+  }
 }
